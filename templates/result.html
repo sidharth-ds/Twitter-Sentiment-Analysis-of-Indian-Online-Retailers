@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Machine Learning App:
+		</div>
+		<h2 >Online Retailers Sentiment Analysis</h2>
+		
+	</div>
+	</header>
+
+	<p style="color:black;font-size:20;"><b>Results:</b></p>
+	<div class="results">
+
+
+	<h2 style="color:blue;">  Percentage of positive comments :{{ value }}% </h2>
+	{% if value >0.5 %}
+	<h2 style="color:green;">  The overall sentiment of tweets: Positive Comments</h2>
+	{% else %}
+	<h2 style="color:red;">  The overall sentiment of tweets: Negative Comments</h2>
+	{% endif %}
+
+
+	</div>
+
+</body>
+</html>
