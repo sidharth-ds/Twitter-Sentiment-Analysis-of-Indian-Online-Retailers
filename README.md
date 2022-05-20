@@ -1,9 +1,33 @@
 # Twitter Sentiment Analysis of top online Retailers in India (end-to-end)
 
+## Tweets Scraping:
+    - scraping data from Twitter and storing the content in a csv file
+    - scraping for both train & test dataset
 
-<details>
-  <summary>The title of the image group</summary><details>
-  <img src="[image-url](https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.shutterstock.com%2Fimage-photo%2Fmountains-under-mist-morning-amazing-260nw-1725825019.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fnature&tbnid=ez-ubljHwN9MSM&vet=12ahUKEwjc5d3v6-33AhWugWMGHUkGA0sQMygBegUIARDYAQ..i&docid=m4H9nlxeVf5uvM&w=390&h=280&q=images&ved=2ahUKEwjc5d3v6-33AhWugWMGHUkGA0sQMygBegUIARDYAQ)" name="image-name">
-  <img src="image-url" name="image-name">
-  <img src="image-url" name="image-name">
-</details>
+## Data Preprocessing:
+    - Natural Language Processing is used for Data Cleaning
+    
+## Sentiment Analysis:
+    - using TextBlob package:
+      - Polarity (-1 to +1) : to classify comments into Positive(1), Negative(-1), Neutral comments(0).
+      - Sentiment (0 to 1): to classify comments into Fact(1) or Opinion(0).
+
+## Drawing insights from the sentiment analysis:
+    - Amazon's Delivery and Products are good, but Service and overall Experience is average
+    - Flipkart's Delivery is very poor
+    - Myntra's Service is good
+    - Ajio's overall shopping Experience is excellent
+    
+## Modelling the Data using Sklearn:
+    - Random Forest algorithm is used
+    - got a very good accuracy of around 87%
+    - saving the model using pickle
+
+## creating a Flask app :
+    - app.py file is created
+      - it contains html templates
+
+## the model can be deployed
+
+
+
