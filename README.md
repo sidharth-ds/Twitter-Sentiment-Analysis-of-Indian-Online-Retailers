@@ -27,7 +27,7 @@
     - app.py file is created
       - it contains html templates
 
-## the model can be deployed
+## The model can be deployed through Heroku
 
 
 
